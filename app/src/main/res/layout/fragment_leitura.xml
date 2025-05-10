@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.leitura.LeituraFragment">
+    <!-- Campo Lote -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLyLote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ll_lote"
+            android:inputType="textCapCharacters"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Hidrometro -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLyDsHidrometro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLyLote">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDsHidrometro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ll_hidrometro"
+            android:inputType="textCapCharacters"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Leitura Principal -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLyLeituraPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLyDsHidrometro"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLeituraPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ll_leitura_principal"
+            android:inputType="text|numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Leitura Noturna -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLyLeituraNoturna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLyLeituraPrincipal"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLeituraNoturna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ll_leitura_noturna"
+            android:inputType="text|numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Campo Leitura Noturna -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLyObservacao"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLyLeituraNoturna"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtObservacao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/ll_observacao"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Botão Registrar -->
+    <Button
+        android:id="@+id/btnLeitura"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/btn_registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

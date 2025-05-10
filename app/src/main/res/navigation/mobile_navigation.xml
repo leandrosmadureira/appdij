@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.com.dij.v02.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="br.com.dij.v02.ui.leitura.LeituraFragment"
+        android:label="@string/menu_leitura"
+        tools:layout="@layout/fragment_leitura" />
+
+    <fragment
+        android:id="@+id/nav_sub_setor"
+        android:name="br.com.dij.v02.ui.subsetor.SubSetorFragment"
+        android:label="@string/menu_sub_setor"
+        tools:layout="@layout/fragment_sub_setor" />
+
+    <fragment
+        android:id="@+id/nav_sincronizar"
+        android:name="br.com.dij.v02.ui.remote.subsetor.SincronizarFragment"
+        android:label="@string/menu_sincronizar"
+        tools:layout="@layout/fragment_config" />
+
+    <fragment
+        android:id="@+id/nav_config"
+        android:name="br.com.dij.v02.ui.config.ConfigFragment"
+        android:label="@string/menu_config"
+        tools:layout="@layout/fragment_config" />
+</navigation>

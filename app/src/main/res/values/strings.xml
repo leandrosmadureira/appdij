@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">v02</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dij</string>
+    <string name="nav_header_subtitle">dij@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_leitura">Leitura</string>
+    <string name="menu_sub_setor">Sub Setor</string>
+    <string name="menu_sincronizar">Sincronizar</string>
+    <string name="menu_config">Configuração</string>
+
+    <!-- Lançamento de Leitura -->
+    <string name="ll_lote">Lote</string>
+    <string name="ll_leitura_principal">Leitura Principal</string>
+    <string name="ll_leitura_noturna">Leitura Noturna</string>
+    <string name="ll_hidrometro">Hidrometro</string>
+    <string name="ll_observacao">Observações</string>
+
+    <!-- Configurações -->
+    <string name="ll_url">URL</string>
+    <string name="btn_registrar">Registrar</string>
+
+    <!-- Sincronizar -->
+    <string name="ll_cd_sub_setor">Código Sub Setor</string>
+    <string name="btn_sincronizar">Sincronizar</string>
+    <string name="btn_zerar_base">Zerar Base</string>
+</resources>
